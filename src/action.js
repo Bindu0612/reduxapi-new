@@ -4,7 +4,7 @@ export const getUsers = (user) =>
   async dispatch => {
     try {
       setLoading();
-
+      
       if (user != null) {
         const result = await fetch("https://api.github.com/users/" + user);
         const data = await result.json();
