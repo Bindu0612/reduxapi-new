@@ -3,7 +3,9 @@ import { GET_USERS, SET_LOADING, ERROR_DATA } from './actionTypes';
 export const getUsers = (user) =>
   async dispatch => {
     try {
-      setLoading();
+      dispatch(
+        setLoading()
+     )
       
       if (user != null) {
         const result = await fetch("https://api.github.com/users/" + user);

@@ -49,10 +49,12 @@ class NewAp extends Component {
                       alt="profile-img" className="profile" />
 
                     <div className="card-content">
-                      <h2> {userData ? users != null ? users.login : "sorry, user not found!" : ""}</h2>
-                      <h2> {userData ? users != null ? users.location : "" : ""}</h2>
+                      <h2> {userData && !loading ? users != null  ? users.login : "sorry, user not found!" : ""}</h2>
+                      <h2> {userData && !loading ? users != null  ? users.location : "" : ""}</h2>
 
                       <h3>{loading && "Getting results for you… please wait."}</h3>
+                      
+
                       <div className="footer">
                         <div className="row">
                           <div className="col-md-4 col-sm-4 col-xs-4">

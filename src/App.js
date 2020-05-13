@@ -1,12 +1,10 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import NewApp from './NewApp';
+
 class App extends Component {
 
-    render(){
-        return(
-            <>
-            Hello, I'm App !
-            </>
-        )
+    render() {
+        return <NewApp />
     }
 }
 
